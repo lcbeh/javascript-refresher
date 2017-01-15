@@ -25,28 +25,28 @@ describe('JavaScript Refresher Questions', function() {
       expect(reverseEveryElementInArray(testArray)).toEqual(['eeffoc', 'aet', 'ekac', 'einworb']);
   });
 
-  xit('6. dropFirstThreeElements: return array with first three elements removed', function() {
+  it('6. dropFirstThreeElements: return array with first three elements removed', function() {
     testArray = [1,2,3,4,5,6]
     expect(dropFirstThreeElements(testArray)).toEqual([4,5,6]);
   });
 
-  xit('7. addElementToBeginningOfArray: add element to beginning of an array', function() {
+  it('7. addElementToBeginningOfArray: add element to beginning of an array', function() {
       testArray = [1,2,3];
       newElement = 'a';
       expect(addElementToBeginningOfArray(testArray, newElement)).toEqual(['a',1,2,3]);
   });
 
-  xit('8. sortArrayByLastLetterOfEachWord: return array sorted by last letter of each string element', function() {
+  it('8. sortArrayByLastLetterOfEachWord: return array sorted by last letter of each string element', function() {
     testArray = ['oatmeal', 'coffee', 'toast', 'tea'];
     expect(sortArrayByLastLetterOfEachWord(testArray)).toEqual(['tea', 'coffee', 'oatmeal', 'toast'])
   });
 
-  xit('9. returnFirstHalfOfString: return first half of a string', function() {
+  it('9. returnFirstHalfOfString: return first half of a string', function() {
       expect(returnFirstHalfOfString('coffee')).toEqual('cof');
       expect(returnFirstHalfOfString('water')).toEqual('wat');
   });
 
-  xit('10. makeNumberNegative: convert positive (or negative) number to a negative number', function() {
+  it('10. makeNumberNegative: convert positive (or negative) number to a negative number', function() {
     expect(makeNumberNegative(5)).toEqual(-5);
     expect(makeNumberNegative(-3)).toEqual(-3);
   });

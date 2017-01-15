@@ -63,29 +63,34 @@ function reverseEveryElementInArray(array) {
 // Question 6
 
 function dropFirstThreeElements(array) {
-
-};
+  return array.splice(array.length - 3, 3)
+}
 
 // Question 7
 
 function addElementToBeginningOfArray(array, element) {
-
-};
+  array.unshift(element)
+  return array
+}
 
 // Question 8
 
 function sortArrayByLastLetterOfEachWord(array) {
-
-};
+  array.sort(function(word1, word2) {
+    return word1[word1.length - 1] > word2[word2.length - 1]
+  })
+  return array
+}
 
 // Question 9
 
 function returnFirstHalfOfString(string) {
-
-};
+  var halfLength = Math.ceil(string.length / 2)
+  return string.slice(0, halfLength)
+}
 
 // Question 10
 
 function makeNumberNegative(number) {
-
-};
+  return number > 0 ? number = -number : number
+}
