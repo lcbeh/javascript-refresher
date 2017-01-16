@@ -17,6 +17,17 @@ function selectElementsStartingWithVowel(array) {
   return array.filter(startingWithVowel)
 }
 
+// function selectElementsStartingWithVowel(array) {
+//   var vowels = []
+//   for(var i = 0; i < array.length; i++) {
+//     if(array[i].charAt(0).match(/[aeiou]/)) {
+//       vowels.push(array[i])
+//     }
+//   }
+//   return vowels
+// }
+
+
 // Question 2 - using push methods
 
 //function selectElementsStartingWithVowel(array) {
@@ -63,7 +74,8 @@ function reverseEveryElementInArray(array) {
 // Question 6
 
 function dropFirstThreeElements(array) {
-  return array.splice(array.length - 3, 3)
+  array.splice(0, 3)
+  return array
 }
 
 // Question 7
