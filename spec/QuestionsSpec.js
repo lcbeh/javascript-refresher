@@ -51,27 +51,27 @@ describe('JavaScript Refresher Questions', function() {
     expect(makeNumberNegative(-3)).toEqual(-3);
   });
 
-  xit('11. separateArrayIntoEvenAndOddNumbers: return nested array with one array of even numbers, one array of odd numbers', function() {
+  it('11. separateArrayIntoEvenAndOddNumbers: return nested array with one array of even numbers, one array of odd numbers', function() {
     testArray = [1,2,3,4,5,6,7]
     expect(separateArrayIntoEvenAndOddNumbers(testArray)).toEqual([[2,4,6], [1,3,5,7]]);
   });
 
-  xit('12. numberOfElementsThatArePalindromes: return number of elements in an array that are palindromes', function() {
+  it('12. numberOfElementsThatArePalindromes: return number of elements in an array that are palindromes', function() {
     testArray = ['pop', 'coffee', 'level', 'hello', 'wow'];
       expect(numberOfElementsThatArePalindromes(testArray)).toEqual(3);
   });
 
-  xit('13. shortestWordInArray: return shortest string in an array', function() {
+  it('13. shortestWordInArray: return shortest string in an array', function() {
       testArray = ['muffin', 'scone', 'tea', 'coffee', 'cafe', 'chocolate'];
       expect(shortestWordInArray(testArray)).toEqual('tea');
   });
 
-  xit('14. longestWordInArray: return longest string in an array', function() {
+  it('14. longestWordInArray: return longest string in an array', function() {
     testArray = ['muffin', 'scone', 'tea', 'coffee', 'cafe', 'chocolate'];
     expect(longestWordInArray(testArray)).toEqual('chocolate');
   });
 
-  xit('15. arrayTotal: return total of number elements in an array', function() {
+  it('15. arrayTotal: return total of number elements in an array', function() {
     testArray = [1,3,5,9,10];
     expect(arrayTotal(testArray)).toEqual(28);
   });
