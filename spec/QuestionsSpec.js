@@ -76,29 +76,29 @@ describe('JavaScript Refresher Questions', function() {
     expect(arrayTotal(testArray)).toEqual(28);
   });
 
-  xit('16. doubleArray: return duplicate of array within a single array and NOT sorted', function() {
+  it('16. doubleArray: return duplicate of array within a single array and NOT sorted', function() {
     testArray = [1,2,3]
     expect(doubleArray(testArray)).toEqual([1,2,3,1,2,3]);
   });
 
-  xit('17. averageOfArray: return average of number elements within an array', function() {
+  it('17. averageOfArray: return average of number elements within an array', function() {
     testArrayA = [8,5,17,24,1,5];
     testArrayB = [5,25,10];
     expect(averageOfArray(testArrayA)).toEqual(10);
     expect(averageOfArray(testArrayB)).toEqual(13.3);
   });
 
-  xit('18. removeElementsGreaterThanFive: return array with elements less than or equal to 5', function() {
+  it('18. removeElementsGreaterThanFive: return array with elements less than or equal to 5', function() {
     testArray = [1,2,6,8,3,4,1,6,10,5,22,4];
     expect(removeElementsGreaterThanFive(testArray)).toEqual([1,2,3,4,1,5,4]);
   });
 
-  xit('19. convertArrayToObject: convert an array into an object with index as the key', function() {
+  it('19. convertArrayToObject: convert an array into an object with index as the key', function() {
     testArray = ['a','b','c'];
     expect(convertArrayToObject(testArray)).toEqual({0: 'a', 1: 'b', 2:'c'});
   });
 
-  xit('20. getLettersInArrayOfWords: return array with letters of all words sorted in alphabetical order', function() {
+  it('20. getLettersInArrayOfWords: return array with letters of all words sorted in alphabetical order', function() {
     testArray = ['hi', 'bye', 'no', 'yes'];
     expect(getLettersInArrayOfWords(testArray)).toEqual(['b','e','e','h','i','n','o','s','y','y'])
   });
