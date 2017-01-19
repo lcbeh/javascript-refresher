@@ -50,29 +50,41 @@ function roundUpNumber(number) {
 // Question 26
 
 function roundDownNumber(number) {
-
+  return Math.floor(number);
 };
 
 // Question 27
 
 function formatDateNicely(date) {
+  var monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  var day = date.getDate()
+  var month = date.getMonth()
+  var year = date.getFullYear()
 
-  };
+  return day + '-' + monthNames[month] + '-' + year;
+};
 
 // Question 28
 
 function getDomainNameFromEmailAddress(email) {
-
+  var domainName = email.split('@')[1];
+  domainName = domainName.split('.')[0];
+  return domainName;
 };
 
 // Question 29
 
 function titleizeString(string) {
 
+  var wordArray = string.split(' ')
+  var titleizeString = wordArray.map(function (word) {
+      return word.charAt(0).toUpperCase() + word.substr(1);
+  })
+  return titleizeString.join(' ');
 };
 
 // Question 30
 
 function checkStringForSpecialCharacters(string) {
-
+  return string.match(/\W/) ? true : false;
 };
